@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THAIRAT & RIZENIC EV | Company Profile</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#332EFF',
+                        primaryDark: '#1a16b3',
+                        dark: '#111827',
+                        light: '#F9FAFB',
+                    },
+                    fontFamily: {
+                        sans: ['Prompt', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(51, 46, 255, 0.08)',
+                        'glow': '0 0 20px rgba(51, 46, 255, 0.3)',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body { font-family: 'Prompt', sans-serif; color: #374151; }
+        .text-gradient {
+            background: linear-gradient(to right, #332EFF, #6b66ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .timeline-dot::before {
+            content: '';
+            position: absolute;
+            left: -33px;
+            top: 6px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: #332EFF;
+            border: 4px solid white;
+            box-shadow: 0 0 0 2px #332EFF;
+        }
+    </style>
+</head>
+<body class="bg-light antialiased selection:bg-primary selection:text-white">
+
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 transition-all duration-300 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <div class="w-10 h-10 bg-primary text-white rounded-lg flex items-center justify-center font-bold text-xl shadow-glow">TR</div>
+                    <span class="font-bold text-lg md:text-xl text-dark tracking-wide">THAIRAT<span class="font-light text-primary">GROUP</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center text-sm font-medium">
+                    <a href="#overview" class="text-gray-600 hover:text-primary transition">Overview</a>
+                    <a href="#strengths" class="text-gray-600 hover:text-primary transition">Strengths</a>
+                    <a href="#ecosystem" class="text-gray-600 hover:text-primary transition">Partners</a>
+                    <a href="#contact" class="px-5 py-2.5 bg-primary text-white rounded-full hover:bg-primaryDark transition shadow-lg shadow-primary/30">ติดต่อเรา</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="text-gray-600 hover:text-primary"><i class="fas fa-bars text-2xl"></i></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="cover" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden min-h-screen flex items-center">
+        <div class="absolute top-0 right-0 -z-10 w-full h-full bg-white">
+            <div class="absolute top-0 right-0 w-2/3 h-full bg-light skew-x-12 transform translate-x-32 border-l border-gray-200/50"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="max-w-2xl">
+                    <p class="text-primary font-semibold tracking-widest uppercase mb-4 text-sm flex items-center gap-2">
+                        <span class="w-8 h-[2px] bg-primary inline-block"></span>
+                        ศูนย์ซ่อมตัวถังและสีรถยนต์มาตรฐานมืออาชีพ
+                    </p>
+                    <h1 class="text-5xl lg:text-7xl font-bold text-dark leading-tight mb-6">
+                        THAIRAT <br>
+                        <span class="font-light text-gray-500 text-4xl lg:text-5xl">AUTO BODY & PAINT CENTER</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8 border-l-4 border-primary pl-4 py-1">
+                        บริษัท ไทยรัตน์ยานยนต์ จำกัด
+                    </p>
+                    <div class="inline-block bg-white px-6 py-3 rounded-xl shadow-soft border border-gray-100">
+                        <p class="text-lg italic text-gray-500 font-medium tracking-wide">
+                            "More Than 50 Years of Auto Body & Paint Excellence"
+                        </p>
+                    </div>
+                </div>
+                <div class="relative hidden lg:block">
+                    <img src="https://placehold.co/800x600/F3F4F6/332EFF?text=cover_hero_thairat.jpg" alt="Thairat Auto Body" class="rounded-3xl shadow-2xl object-cover w-full h-auto transform hover:scale-[1.02] transition duration-500">
+                    <div class="absolute -bottom-8 -left-8 bg-primary text-white p-6 rounded-2xl shadow-glow">
+                        <p class="text-4xl font-bold mb-1">50+</p>
+                        <p class="text-xs font-light uppercase tracking-widest opacity-80">Years Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="overview" class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                
+                <div>
+                    <h2 class="text-primary font-bold tracking-widest uppercase text-sm mb-3">Company Overview</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-dark mb-6 leading-tight">ภาพรวมองค์กร</h3>
+                    
+                    <div class="prose prose-lg text-gray-600 mb-10">
+                        <p>
+                            <strong>บริษัท ไทยรัตน์ยานยนต์ จำกัด</strong> เป็นอู่ซ่อมตัวถังและสีรถยนต์ที่มีประสบการณ์ยาวนานกว่า 50 ปี ให้บริการงานซ่อมสีและตัวถังสำหรับรถยนต์ทั่วไป รถยนต์นำเข้า และรถยนต์ระดับพรีเมียม โดยได้รับความไว้วางใจจากลูกค้าและบริษัทประกันภัยชั้นนำมาอย่างต่อเนื่อง
+                        </p>
+                        <p>
+                            ด้วยความเชี่ยวชาญที่สั่งสมมายาวนาน ไทยรัตน์ยานยนต์มุ่งมั่นพัฒนาคุณภาพงานซ่อม เทคโนโลยี และบุคลากรอย่างต่อเนื่อง เพื่อให้สามารถรองรับรถยนต์รุ่นใหม่และเทคโนโลยียานยนต์ไฟฟ้าได้อย่างมีประสิทธิภาพ
+                        </p>
+                        <p>
+                            ผู้บริหารของบริษัทได้รับการแต่งตั้งจาก Tesla เพื่อเป็นตัวแทนของ Tesla Approved Body Shop ในการสนับสนุนและรักษามาตรฐานงานซ่อมตัวถังและสีตามข้อกำหนดระดับสากลของ Tesla
+                        </p>
+                        <p>
+                            ปัจจุบัน บริษัท ไทยรัตน์ยานยนต์ ยังเป็นพันธมิตรด้านการผลิตและงานซ่อมตัวถังและสีให้กับ <strong>RIZENIC EV Paint Center</strong> เพื่อรองรับงานซ่อมรถยนต์ไฟฟ้าและรถยนต์ระดับพรีเมียมที่ต้องการความเชี่ยวชาญเฉพาะทาง
+                        </p>
+                    </div>
+
+                    <!-- Executive Management -->
+                    <div class="bg-light rounded-2xl p-8 border border-gray-100 shadow-soft">
+                        <h4 class="text-sm font-bold text-gray-400 uppercase tracking-widest mb-6 border-b pb-2">Executive Management</h4>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div class="flex items-center gap-4">
+                                <img src="https://placehold.co/100x100/332EFF/FFFFFF?text=exec_sangduan.jpg" alt="คุณแสงเดือน" class="w-16 h-16 rounded-full object-cover shadow-md border-2 border-white">
+                                <div>
+                                    <p class="font-bold text-dark">คุณแสงเดือน อุทธิยา</p>
+                                    <p class="text-sm text-primary font-medium">กรรมการผู้จัดการ</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <img src="https://placehold.co/100x100/332EFF/FFFFFF?text=exec_somboon.jpg" alt="คุณสมบูรณ์" class="w-16 h-16 rounded-full object-cover shadow-md border-2 border-white">
+                                <div>
+                                    <p class="font-bold text-dark">คุณสมบูรณ์ วงพจน์ธนพงศ์</p>
+                                    <p class="text-sm text-primary font-medium">กรรมการบริหาร</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative mt-10 lg:mt-0">
+                    <img src="https://placehold.co/600x800/E5E7EB/332EFF?text=hq_building_main.jpg" alt="HQ Building" class="rounded-3xl shadow-xl w-full object-cover h-[500px] lg:h-[700px]">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="strengths" class="py-24 bg-light border-y border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Core Strengths -->
+            <div>
+                <div class="text-center mb-16">
+                    <h2 class="text-primary font-bold tracking-widest uppercase text-sm mb-3">Key Strengths</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-dark">จุดแข็งและศักยภาพของเรา</h3>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-2xl shadow-soft hover:-translate-y-2 transition duration-300 border-b-4 border-primary">
+                        <i class="fas fa-award text-4xl text-primary mb-6"></i>
+                        <h4 class="text-lg font-bold text-dark mb-3">50+ Years Experience</h4>
+                        <p class="text-sm text-gray-600">ประสบการณ์ยาวนานกว่า 50 ปี ในงานซ่อมตัวถังและสีรถยนต์ที่ได้รับความไว้วางใจ</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-soft hover:-translate-y-2 transition duration-300">
+                        <i class="fas fa-car-side text-4xl text-primary mb-6"></i>
+                        <h4 class="text-lg font-bold text-dark mb-3">Premium & Luxury Vehicle Specialist</h4>
+                        <p class="text-sm text-gray-600">เชี่ยวชาญงานซ่อมรถยนต์พรีเมียม รถนำเข้า และรถยนต์ไฟฟ้า (EV)</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-soft hover:-translate-y-2 transition duration-300">
+                        <i class="fas fa-certificate text-4xl text-primary mb-6"></i>
+                        <h4 class="text-lg font-bold text-dark mb-3">Tesla Approved Body Shop Experience</h4>
+                        <p class="text-sm text-gray-600">ผู้บริหารได้รับการแต่งตั้งเพื่อสนับสนุนและรักษามาตรฐานงานซ่อมระดับสากลของ Tesla</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-soft hover:-translate-y-2 transition duration-300">
+                        <i class="fas fa-shield-alt text-4xl text-primary mb-6"></i>
+                        <h4 class="text-lg font-bold text-dark mb-3">Insurance Network</h4>
+                        <p class="text-sm text-gray-600">ได้รับความไว้วางใจจากเครือข่ายบริษัทประกันภัยชั้นนำและรองรับงานกลุ่มรถ Fleet</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-soft hover:-translate-y-2 transition duration-300">
+                        <i class="fas fa-desktop text-4xl text-primary mb-6"></i>
+                        <h4 class="text-lg font-bold text-dark mb-3">Real-time Repair Tracking</h4>
+                        <p class="text-sm text-gray-600">ระบบบริหารจัดการและติดตามสถานะงานซ่อมออนไลน์ได้อย่างเรียลไทม์</p>
+                    </div>
+                    <div class="bg-blue-50 p-8 rounded-2xl shadow-soft hover:-translate-y-2 transition duration-300 border border-primary/20">
+                        <i class="fas fa-handshake text-4xl text-primary mb-6"></i>
+                        <h4 class="text-lg font-bold text-dark mb-3">Production Partner of RIZENIC EV Paint Center</h4>
+                        <p class="text-sm text-gray-600"><strong>Strategic Partnership:</strong> เป็นพันธมิตรด้านงานซ่อมตัวถังและสี โดยสนับสนุนงานซ่อมรถยนต์ไฟฟ้าและรถพรีเมียมภายใต้มาตรฐานระดับสูง</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Real-time Tracking System Showcase -->
+            <div class="mt-24 pt-16 border-t border-gray-200">
+                <div class="text-center mb-12">
+                    <h2 class="text-primary font-bold tracking-widest uppercase text-sm mb-3">Smart Management</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-dark">โปรแกรมบริหารงานซ่อม</h3>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto text-lg">
+                        ยกระดับความโปร่งใสด้วยระบบบริหารจัดการแบบออนไลน์ สามารถติดตามสถานะงานซ่อมได้อย่างเรียลไทม์ (Real-time Tracking) ในทุกขั้นตอน
+                    </p>
+                </div>
+
+                <!-- Main Dashboards -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                    <!-- Dashboard.jpg -->
+                    <div class="bg-white p-5 rounded-2xl shadow-xl border border-gray-100 transform hover:-translate-y-1 transition duration-300">
+                        <img src="Dashboard.jpg" alt="Executive Dashboard" class="w-full h-auto rounded-xl border border-gray-50 shadow-sm" onerror="this.src='https://placehold.co/800x450/F3F4F6/332EFF?text=Dashboard.jpg'">
+                        <p class="text-center text-sm text-dark mt-4 font-bold tracking-wide uppercase">Executive Dashboard</p>
+                        <p class="text-center text-xs text-gray-500 mt-1">ติดตามภาพรวมการดำเนินงาน</p>
+                    </div>
+                    <!-- trackingworkflow.jpg -->
+                    <div class="bg-white p-5 rounded-2xl shadow-xl border border-gray-100 transform hover:-translate-y-1 transition duration-300">
+                        <img src="trackingworkflow.jpg" alt="Workflow Tracking" class="w-full h-auto rounded-xl border border-gray-50 shadow-sm" onerror="this.src='https://placehold.co/800x450/F3F4F6/332EFF?text=trackingworkflow.jpg'">
+                        <p class="text-center text-sm text-dark mt-4 font-bold tracking-wide uppercase">Real-time Workflow (Kanban)</p>
+                        <p class="text-center text-xs text-gray-500 mt-1">ระบบติดตามสถานะรถยนต์ทุกขั้นตอน</p>
+                    </div>
+                </div>
+
+                <!-- Metrics & Charts -->
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white p-4 rounded-xl shadow-soft border border-gray-100">
+                        <img src="Schedule.jpg" alt="Schedule" class="w-full h-auto rounded-lg mb-3" onerror="this.src='https://placehold.co/400x300/F3F4F6/332EFF?text=Schedule.jpg'">
+                        <p class="text-center text-sm font-semibold text-dark">นัดหมายเข้าซ่อม</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-soft border border-gray-100">
+                        <img src="Delivery.jpg" alt="Delivery" class="w-full h-auto rounded-lg mb-3" onerror="this.src='https://placehold.co/400x300/F3F4F6/332EFF?text=Delivery.jpg'">
+                        <p class="text-center text-sm font-semibold text-dark">กำหนดส่งมอบ</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-soft border border-gray-100">
+                        <img src="repairs.jpg" alt="Repairs" class="w-full h-auto rounded-lg mb-3" onerror="this.src='https://placehold.co/400x300/F3F4F6/332EFF?text=repairs.jpg'">
+                        <p class="text-center text-sm font-semibold text-dark">กำหนดซ่อมเสร็จ</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-soft border border-gray-100">
+                        <img src="manament.jpg" alt="Management" class="w-full h-auto rounded-lg mb-3" onerror="this.src='https://placehold.co/400x300/F3F4F6/332EFF?text=manament.jpg'">
+                        <p class="text-center text-sm font-semibold text-dark">สัดส่วนสถานะงานซ่อม</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="ecosystem" class="py-24 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-primary font-bold tracking-widest uppercase text-sm mb-3">Our Partners</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-dark">Business Ecosystem</h3>
+            </div>
+
+            <div class="bg-white rounded-3xl p-8 lg:p-12 shadow-soft border border-gray-100">
+                <div class="flex justify-center mb-12">
+                    <div class="text-center p-8 border-2 border-primary rounded-2xl bg-blue-50/30 max-w-lg w-full shadow-md">
+                        <p class="text-sm font-bold text-primary uppercase tracking-widest mb-2">Main Contractor</p>
+                        <h4 class="text-2xl font-bold text-dark">บริษัท ไทยรัตน์ยานยนต์ จำกัด</h4>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-center gap-4 mb-12 opacity-50">
+                    <span class="w-16 h-[1px] bg-gray-400"></span>
+                    <i class="fas fa-link text-gray-400"></i>
+                    <span class="w-16 h-[1px] bg-gray-400"></span>
+                </div>
+
+                <h4 class="text-center text-lg font-bold text-dark mb-8 uppercase tracking-widest">Business Partners</h4>
+                
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="flex flex-col items-center justify-center p-8 bg-light rounded-2xl border border-gray-100 hover:border-primary/30 hover:shadow-md transition">
+                        <i class="fas fa-car text-3xl text-gray-400 mb-3"></i>
+                        <h5 class="font-bold text-dark text-center">Tesla</h5>
+                    </div>
+                    <div class="flex flex-col items-center justify-center p-8 bg-light rounded-2xl border border-gray-100 hover:border-primary/30 hover:shadow-md transition">
+                        <i class="fas fa-shield-alt text-3xl text-gray-400 mb-3"></i>
+                        <h5 class="font-bold text-dark text-center">บริษัทประกันภัย</h5>
+                    </div>
+                    <div class="flex flex-col items-center justify-center p-8 bg-light rounded-2xl border border-gray-100 hover:border-primary/30 hover:shadow-md transition">
+                        <i class="fas fa-truck-moving text-3xl text-gray-400 mb-3"></i>
+                        <h5 class="font-bold text-dark text-center">Fleet Operator</h5>
+                    </div>
+                    <div class="flex flex-col items-center justify-center p-8 bg-light rounded-2xl border border-gray-100 hover:border-primary/30 hover:shadow-md transition">
+                        <i class="fas fa-tools text-3xl text-gray-400 mb-3"></i>
+                        <h5 class="font-bold text-dark text-center">ศูนย์บริการรถยนต์</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-white border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="text-primary font-bold tracking-widest uppercase text-sm mb-3">Contact Us</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-dark mb-6">ร่วมงานกับเรา</h3>
+                    <p class="text-gray-600 mb-10 text-lg">
+                        บริษัท ไทยรัตน์ยานยนต์ จำกัด พร้อมดูแลรถยนต์ของลูกค้าทุกท่าน และร่วมมือเป็นพันธมิตรทางธุรกิจระยะยาวกับบริษัทประกันภัยและองค์กรธุรกิจต่างๆ
+                    </p>
+
+                    <div>
+                        <h4 class="text-sm font-bold text-dark uppercase tracking-widest mb-4">Executive Management Office</h4>
+                        <div class="space-y-3">
+                            <p class="text-gray-600"><i class="fas fa-user-circle text-gray-400 mr-2"></i> <strong>คุณแสงเดือน อุทธิยา</strong> (กรรมการผู้จัดการ)</p>
+                            <p class="text-gray-600"><i class="fas fa-user-circle text-gray-400 mr-2"></i> <strong>คุณสมบูรณ์ วงพจน์ธนพงศ์</strong> (กรรมการบริหาร)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="bg-white rounded-3xl shadow-glow p-8 border border-gray-100 mb-8">
+                        <h4 class="text-2xl font-bold text-dark mb-6">Business Inquiry</h4>
+                        <form class="space-y-4">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">ชื่อ - นามสกุล</label>
+                                    <input type="text" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 outline-none transition bg-light">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">องค์กร / บริษัท</label>
+                                    <input type="text" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 outline-none transition bg-light">
+                                </div>
+                            </div>
+                            <button type="button" class="w-full bg-primary hover:bg-primaryDark text-white font-bold py-4 rounded-xl transition shadow-lg mt-4">
+                                ส่งข้อความ
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-gray-400 py-10 text-center text-sm border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>&copy; 2026 THAIRAT AUTO BODY & PAINT CENTER. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
