@@ -111,7 +111,7 @@
     <section id="overview" class="py-24 bg-white relative border-t border-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-                <div>
+                <div class="lg:sticky lg:top-28">
                     <h2 class="text-primary font-bold tracking-widest uppercase text-sm mb-3">Company Overview</h2>
                     <h3 class="text-3xl md:text-4xl font-bold text-dark mb-6 leading-tight">ภาพรวมองค์กร</h3>
                     
@@ -126,30 +126,33 @@
                             ปัจจุบัน บริษัทมีความพร้อมในการรองรับรถยนต์ไฟฟ้า (EV) และยานยนต์เทคโนโลยีใหม่ โดยดำเนินงานภายใต้มาตรฐานการซ่อมรถยนต์ไฟฟ้า (EV) และมาตรฐานงานซ่อมของ <strong>Tesla Approved Body Shop</strong>
                         </p>
                     </div>
+                </div>
 
-                    <!-- Executive Management -->
-                    <div class="bg-light rounded-2xl p-8 border border-gray-100 shadow-soft">
-                        <h4 class="text-sm font-bold text-gray-400 uppercase tracking-widest mb-6 border-b pb-2">Executive Management</h4>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                            <div class="flex items-center gap-4">
-                                <img src="work/exec_sangduan.jpg" alt="คุณแสงเดือน" class="w-16 h-16 rounded-full object-cover shadow-md border-2 border-white" onerror="this.src='https://placehold.co/100x100/332EFF/FFFFFF?text=exec_sangduan.jpg'">
-                                <div>
-                                    <p class="font-bold text-dark">คุณแสงเดือน อุทธิยา</p>
-                                    <p class="text-sm text-primary font-medium">กรรมการผู้จัดการ</p>
-                                </div>
+                <!-- Executive Management -->
+                <div class="relative mt-10 lg:mt-0 bg-light rounded-3xl p-10 border border-gray-100 shadow-soft">
+                    <h4 class="text-sm font-bold text-gray-400 uppercase tracking-widest mb-10 border-b pb-2">Executive Management</h4>
+                    
+                    <div class="space-y-12">
+                        <!-- MD -->
+                        <div class="flex flex-col md:flex-row items-center gap-8 bg-white p-6 rounded-2xl shadow-sm border border-gray-100/50">
+                            <img src="work/exec_sangduan.jpg" alt="คุณแสงเดือน อุทธิยา" class="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover shadow-lg border-4 border-white" onerror="this.src='https://placehold.co/200x200/332EFF/FFFFFF?text=exec_sangduan.jpg'">
+                            <div class="text-center md:text-left">
+                                <p class="text-2xl font-bold text-dark mb-1">คุณแสงเดือน อุทธิยา</p>
+                                <p class="text-lg text-primary font-medium">กรรมการผู้จัดการ</p>
+                                <div class="w-16 h-1 bg-primary mt-4 rounded-full mx-auto md:mx-0"></div>
                             </div>
-                            <div class="flex items-center gap-4">
-                                <img src="work/exec_somboon.jpg" alt="คุณสมบูรณ์" class="w-16 h-16 rounded-full object-cover shadow-md border-2 border-white" onerror="this.src='https://placehold.co/100x100/332EFF/FFFFFF?text=exec_somboon.jpg'">
-                                <div>
-                                    <p class="font-bold text-dark">คุณสมบูรณ์ วงพจน์ธนพงศ์</p>
-                                    <p class="text-sm text-primary font-medium">กรรมการบริหาร</p>
-                                </div>
+                        </div>
+                        
+                        <!-- Executive Director -->
+                        <div class="flex flex-col md:flex-row items-center gap-8 bg-white p-6 rounded-2xl shadow-sm border border-gray-100/50">
+                            <img src="work/exec_somboon.jpg" alt="คุณสมบูรณ์ วงพจน์ธนพงศ์" class="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover shadow-lg border-4 border-white" onerror="this.src='https://placehold.co/200x200/332EFF/FFFFFF?text=exec_somboon.jpg'">
+                            <div class="text-center md:text-left">
+                                <p class="text-2xl font-bold text-dark mb-1">คุณสมบูรณ์ วงพจน์ธนพงศ์</p>
+                                <p class="text-lg text-primary font-medium">กรรมการบริหาร</p>
+                                <div class="w-16 h-1 bg-primary mt-4 rounded-full mx-auto md:mx-0"></div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="relative mt-10 lg:mt-0">
-                    <img src="work/hq_building_main.jpg" alt="HQ Building" class="rounded-3xl shadow-xl w-full object-cover h-[500px] lg:h-[700px]" onerror="this.src='https://placehold.co/600x800/E5E7EB/332EFF?text=hq_building_main.jpg'">
                 </div>
             </div>
         </div>
@@ -386,10 +389,10 @@
                 <h3 class="text-3xl md:text-4xl font-bold text-dark">เครือข่ายพันธมิตรธุรกิจ</h3>
             </div>
 
-            <!-- Insurance Partners -->
+            <!-- Insurance Partners - Reduced to 3 -->
             <div class="mb-16">
-                <h4 class="text-xl font-bold text-dark mb-6 border-l-4 border-primary pl-3">บริษัทประกันภัยชั้นนำ</h4>
-                <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6">
+                <h4 class="text-xl font-bold text-dark mb-6 border-l-4 border-primary pl-3">เครือข่ายบริษัทประกันภัยชั้นนำที่มอบความไว้วางใจ</h4>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
                     <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm flex items-center justify-center aspect-video">
                         <img src="work/logo_ins_viriyah.png" alt="Insurance" class="max-w-full max-h-full grayscale hover:grayscale-0 transition" onerror="this.src='https://placehold.co/150x80/FFFFFF/9CA3AF?text=Ins_Logo'">
                     </div>
@@ -398,15 +401,6 @@
                     </div>
                     <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm flex items-center justify-center aspect-video">
                         <img src="work/logo_ins_dhipaya.png" alt="Insurance" class="max-w-full max-h-full grayscale hover:grayscale-0 transition" onerror="this.src='https://placehold.co/150x80/FFFFFF/9CA3AF?text=Ins_Logo'">
-                    </div>
-                    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm flex items-center justify-center aspect-video">
-                        <img src="work/logo_ins_muangthai.png" alt="Insurance" class="max-w-full max-h-full grayscale hover:grayscale-0 transition" onerror="this.src='https://placehold.co/150x80/FFFFFF/9CA3AF?text=Ins_Logo'">
-                    </div>
-                    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm flex items-center justify-center aspect-video">
-                        <img src="work/logo_ins_tokiomarine.png" alt="Insurance" class="max-w-full max-h-full grayscale hover:grayscale-0 transition" onerror="this.src='https://placehold.co/150x80/FFFFFF/9CA3AF?text=Ins_Logo'">
-                    </div>
-                    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm flex items-center justify-center aspect-video">
-                        <img src="work/logo_ins_more.png" alt="Insurance" class="max-w-full max-h-full grayscale hover:grayscale-0 transition" onerror="this.src='https://placehold.co/150x80/FFFFFF/9CA3AF?text=Ins_Logo'">
                     </div>
                 </div>
             </div>
